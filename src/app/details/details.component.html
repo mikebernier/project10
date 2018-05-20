@@ -1,0 +1,18 @@
+
+<div *ngIf="post" class="body-blur">
+
+  <div class="row">
+
+      <div class="small-12 medium-10">
+          <a routerLink="/" class="cta-btn">Back</a>
+          <h1>{{post.joke}}</h1>
+      </div>
+
+  </div>
+
+  <div class="row columns">
+    <p> {{ post.answer }}</p>
+  </div>
+
+
+</div>

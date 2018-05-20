@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+$bg: #2A3136;
+$text-color: #88949D;
+$accent-color: #00E4AC;
+
+body{
+  background: $bg;
+  color: $text-color;
+  font-family: 'Raleway';
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: $accent-color;
+}
+
+.cta-btn, .cta-btn:visited{
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  padding: 5px 12px;
+  float: right;
+  border-radius: 5px;
+}
+
+.cta-btn:hover{
+  color: $bg;
+  background: $accent-color;
+}

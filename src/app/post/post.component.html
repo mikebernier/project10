@@ -1,0 +1,24 @@
+
+<div>
+    <div class="row columns">
+        <h1>Post a Joke</h1>
+    </div>
+
+  <form [formGroup]="postForm" (ngSubmit)="addPost(postForm.value)">
+      <div class="row columns">
+        <label>Joke:
+        <input type="text" name="joke" [formControl]="postForm.controls['joke']">
+        </label>
+
+        <label>Answer:
+          <input type="text" name="answer" [formControl]="postForm.controls['answer']">
+        </label>
+
+        <input type="submit" class="cta cta-btn" value="Submit Joke" [disabled]="!postForm.valid">
+
+      </div>
+  </form>
+
+</div>
+
+
